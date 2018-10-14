@@ -626,6 +626,10 @@ open_kconfig('../linux', './Kconfig.staging');
 close OUT;
 
 # These options should default to off
+disable_config('CONFIG_USB_GSPCA');
+disable_config('CONFIG_MEDIA_CAMERA_SUPPORT');
+disable_config('CONFIG_MEDIA_RADIO_SUPPORT');
+disable_config('RC_CORE');
 disable_config('DVB_AV7110_FIRMWARE');
 disable_config('DVB_CINERGYT2_TUNING');
 disable_config('VIDEO_HELPER_CHIPS_AUTO');
