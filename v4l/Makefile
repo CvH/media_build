@@ -88,9 +88,6 @@ ifneq ($(filter $(no-makefile-media-targets), $(MAKECMDGOALS)),)
 endif
 
 makefile-mm := 1
-ifeq ("$(wildcard $(obj)/frame_vector.c)","")
-	makefile-mm := 0
-endif
 
 # If version not yet detected, we can't create/have these files yet
 ifeq ($(KERNELRELEASE),)
